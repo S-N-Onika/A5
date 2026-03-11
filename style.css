@@ -1,0 +1,22 @@
+.error {
+    border: 2px red solid;
+    color: red;
+}
+
+.zoom-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.zoomCard {
+    background: white;
+    width: 700px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}

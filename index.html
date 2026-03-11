@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./tailwind.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign In</title>
+</head>
+
+<body class="bg-[#F8FAFC] items-center flex justify-center">
+
+    <header>
+        <section class="p-8 my-8 mx-auto w-[520px] bg-white">
+            <div class="place-items-center ">
+                <img class="pb-6" src="./img/github-logo.png" alt="">
+                <h2 class="text-center font-semibold text-2xl">GitHub Issues <br> Tracker</h2>
+                <p class="text-[#64748B]">Sign in to manage your issues</p>
+            </div>
+
+            <form class="py-6">
+                <div>
+                    <label class="text-[#1F2937] font-medium" for="username">Username</label><br>
+                    <input class="w-full border-gray-300 p-2 rounded-md my-2" type="text" placeholder="Enter Username"
+                        id="username" name="username">
+                    <p class="text-[#4A00FF] text-[14px]">Default: admin</p>
+                </div>
+
+                <div class="pt-4">
+                    <label class="text-[#1F2937] font-medium" for="password">Password</label><br>
+                    <div class="flex items-center gap-3">
+                        <input class="w-full border-gray-300 p-2 rounded-md my-2" type="password"
+                            placeholder="Enter Password" name="password" id="password">
+                        <button type="button" onclick="togglePassword()" class="cursor-pointer"><i id="eyeIcon"
+                                class="fa-regular fa-eye" style="color: #64748b;"></i></button>
+                    </div>
+                    <p class="text-[#4A00FF] text-[14px]">Default: admin123</p>
+                </div>
+            </form>
+
+            <button id="signInBtn" class="btn btn-primary w-full rounded-md text-white text-[17px]">Sign In</button>
+
+            <div class="flex items-center gap-2 py-6">
+                <hr class="border-gray-300 w-full">
+                <p class="text-[#1F2937]">OR</p>
+                <hr class="border-gray-300 w-full">
+            </div>
+
+            <p class="text-[#64748B] pb-2 text-center text-[14px]">Demo Credentials:</p>
+            <div class="place-items-center bg-[#F8FAFC] p-6">
+                <p class="text-[#1F2937] font-bold">Username: <span class="text-[#1F2937] font-normal">admin</span></p>
+                <p class="text-[#1F2937] font-bold">Password: <span class="text-[#1F2937] font-normal">admin123</span>
+                </p>
+            </div>
+
+        </section>
+    </header>
+
+    <script src="./script.js/index.js"></script>
+
+</body>
+
+</html>
